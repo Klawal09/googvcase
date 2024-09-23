@@ -1,0 +1,34 @@
+{
+  "name": "projects/salesforcecaseassistant/agent/intents/07f3003d-247f-430d-9439-cdbcf0060fca",
+  "displayName": "CheckCaseStatusIntent",
+  "priority": 500000,
+  "parameters": [
+    {
+      "name": "caseNumber",
+      "displayName": "caseNumber",
+      "entityType": "@sys.any",
+      "mandatory": true,
+      "prompts": [
+        "Please provide the case number."
+      ]
+    }
+  ],
+  "messages": [
+    {
+      "text": {
+        "text": [
+          "What's the status of case number $caseNumber?",
+          "The status of case number $caseNumber is: {status}."
+        ]
+      }
+    }
+  ],
+  "defaultResponsePlatforms": {
+    "ACTIONS_ON_GOOGLE": {
+      "richResponse": {
+        "items": []
+      }
+    }
+  },
+  "webhookState": "WEBHOOK_STATE_ENABLED"
+}

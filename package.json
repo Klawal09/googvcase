@@ -1,0 +1,12 @@
+{
+  "name": "salesforce-integration",
+  "version": "1.0.0",
+  "description": "A webhook for Salesforce integration",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "https": "^1.0.0" // Add any other dependencies you need here
+  }
+}
